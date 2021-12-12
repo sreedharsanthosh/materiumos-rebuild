@@ -262,7 +262,7 @@ nav {
         rgba(255, 255, 255, 0.541),
         rgba(255, 255, 255, 0.103)
       );
-      backdrop-filter: blur(2px);
+      backdrop-filter: blur(4px);
       border-radius: 0.4vw;
       transition: transform 600ms ease;
       &:hover {
@@ -379,15 +379,21 @@ footer {
   }
   .nav-overlay {
     flex-direction: column;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
+    .overlay-badge {
+      display: none;
+    }
     .overlay-left {
       padding: 1rem 0rem;
-      height: 40%;
+      width: 90%;
+      height: 50%;
       img {
         width: 60% !important;
       }
       .overlay-about {
+        margin: 4vh 0vh !important;
         h1 {
           font-size: 2rem;
         }
@@ -418,11 +424,11 @@ footer {
         }
       }
     }
-    .overlay-badge {
-      width: 11vw;
-    }
     .overlay-right {
       height: 60%;
+      .overlay-nav {
+        min-height: 35vh;
+      }
     }
   }
   .home {
@@ -433,11 +439,11 @@ footer {
     .home-text {
       width: 100%;
       h1 {
-        font-size: 7vw;
+        font-size: 2.7rem;
       }
       p {
-        font-size: 3vw;
-        line-height: 4vw;
+        font-size: 1.2rem;
+        line-height: 2rem;
       }
     }
     .home-img {
@@ -446,6 +452,58 @@ footer {
       img {
         width: 50%;
       }
+    }
+  }
+  .features {
+    flex-direction: column;
+    .backdrop {
+      background: rgba(0, 0, 0, 0.205);
+    }
+    .features-card-container {
+      width: 100%;
+      .features-card {
+        width: 90%;
+        border-radius: 2vw;
+        padding: 2vh 2vw;
+        h1 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .swiper {
+      width: 75%;
+      .swiper_slide {
+        width: 10vw !important;
+      }
+    }
+  }
+  .team {
+    .wrapper {
+      width: 70%;
+    }
+    .container .card {
+      border-radius: 0.5rem;
+      width: 90%;
+      .card-text {
+        h1 {
+          font-size: 1.5rem !important;
+        }
+        h3 {
+          font-size: 0.8rem !important;
+        }
+      }
+      .card-text .buttons .btn a i {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+  footer {
+    height: auto;
+    h1 {
+      font-size: 1.8rem !important;
     }
   }
 }

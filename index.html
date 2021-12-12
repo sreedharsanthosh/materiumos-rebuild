@@ -24,40 +24,52 @@
     <title>MateriumOS - Official</title>
   </head>
   <body>
+    <div class="nav-overlay">
+      <div class="overlay-badge"></div>
+      <div class="overlay-left">
+        <img
+          src="/images/logo and tagline.png"
+          alt="Logo"
+          class="overlay-logo"
+        />
+        <div class="overlay-about">
+          <h1>Contact Us On</h1>
+          <div class="overlay-buttons">
+            <button>
+              <i class="fab fa-telegram-plane"></i>
+              <span class="space"></span> <span id="btn-text"> Telegram </span>
+            </button>
+            <button>
+              <i class="fab fa-twitter"></i> <span class="space"></span>
+              <span id="btn-text"> Twitter </span>
+            </button>
+            <button>
+              <i class="fab fa-github"></i> <span class="space"></span>
+              <span id="btn-text"> GitHub </span>
+            </button>
+          </div>
+        </div>
+        <div class="overlay-maintainer">
+          <h1>Want to be a maintainer?</h1>
+          <button>Fill it out</button>
+        </div>
+      </div>
+      <div class="overlay-right">
+        <ul class="overlay-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#team">The team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="hamburger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
-    <nav>
-      <img
-        src="/images/logo and tagline.png"
-        alt="Logo of materium os custom rom"
-        width="15%"
-        class="logo"
-      />
-      <ul class="nav-links">
-        <li class="nav-item">
-          <a
-            class="nav-link active"
-            style="color: white"
-            aria-current="page"
-            href="#"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: white" href="#">Download</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: white" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: white" href="#">About</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="home">
+
+    <div class="home" id="home">
       <div class="home-badge"></div>
       <div class="home-text">
         <h1>Materium OS</h1>
@@ -200,6 +212,282 @@
         </div>
       </div>
     </div>
+    <div class="team" id="team">
+      <div class="wrapper">
+        <img src="./images/Logo.png" alt="Logo of materium os" />
+        <h1>Meet the team</h1>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://avatars.githubusercontent.com/u/36458596?v=4"
+              alt="Profile of a team member"
+            />
+          </div>
+          <div class="card-text">
+            <h1 style="font-size: 2vw; color: rgb(49, 49, 49)">Nick</h1>
+            <h3 style="font-size: 1.2vw; color: rgb(49, 49, 49)">
+              Founder | Lead core developer
+            </h3>
+            <div class="buttons">
+              <button class="btn">
+                <a target="blank" href="https://github.com/nift4"
+                  ><i
+                    class="fab fa-github"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://t.me/nift4"
+                  ><i
+                    class="fab fa-telegram-plane"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://twitter.com/_nift4"
+                  ><i
+                    class="fab fa-twitter"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://avatars.githubusercontent.com/u/58335765?v=4"
+              alt="Profile of a team member"
+            />
+          </div>
+          <div class="card-text">
+            <h1 style="font-size: 2vw; color: rgb(49, 49, 49)">hisoka_simp</h1>
+            <h3 style="font-size: 1.5vw; color: rgb(49, 49, 49)">Co-founder</h3>
+            <div class="buttons">
+              <button class="btn">
+                <a target="blank" href="https://github.com/nift4"
+                  ><i
+                    class="fab fa-github"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://t.me/nift4"
+                  ><i
+                    class="fab fa-telegram-plane"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://twitter.com/_nift4"
+                  ><i
+                    class="fab fa-twitter"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://avatars.githubusercontent.com/u/75132268?v=4"
+              alt="Profile of a team member"
+            />
+          </div>
+          <div class="card-text">
+            <h1 style="font-size: 1.6vw; color: rgb(49, 49, 49)">
+              Sreedhar Santhosh
+            </h1>
+            <h3 style="font-size: 1.5vw; color: rgb(49, 49, 49)">
+              Web developer
+            </h3>
+            <div class="buttons">
+              <button class="btn">
+                <a target="blank" href="https://github.com/nift4"
+                  ><i
+                    class="fab fa-github"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://t.me/nift4"
+                  ><i
+                    class="fab fa-telegram-plane"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://twitter.com/_nift4"
+                  ><i
+                    class="fab fa-twitter"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="images/Qirkl.jpeg" alt="Profile of a team member" />
+          </div>
+          <div class="card-text">
+            <h1 style="font-size: 2vw; color: rgb(49, 49, 49)">Qirkl</h1>
+            <h3 style="font-size: 1.5vw; color: rgb(49, 49, 49)">
+              Lead designer
+            </h3>
+            <div class="buttons">
+              <button class="btn">
+                <a target="blank" href="https://github.com/nift4"
+                  ><i
+                    class="fab fa-github"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://t.me/nift4"
+                  ><i
+                    class="fab fa-telegram-plane"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://twitter.com/_nift4"
+                  ><i
+                    class="fab fa-twitter"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://avatars.githubusercontent.com/u/39865767?v=4"
+              alt="Profile of a team member"
+            />
+          </div>
+          <div class="card-text">
+            <h1 style="font-size: 2vw; color: rgb(49, 49, 49)">
+              Alex W Crafter
+            </h1>
+            <h3 style="font-size: 1.5vw; color: rgb(49, 49, 49)">Support</h3>
+            <div class="buttons">
+              <button class="btn">
+                <a target="blank" href="https://github.com/nift4"
+                  ><i
+                    class="fab fa-github"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://t.me/nift4"
+                  ><i
+                    class="fab fa-telegram-plane"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://twitter.com/_nift4"
+                  ><i
+                    class="fab fa-twitter"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://avatars.githubusercontent.com/u/39265461?v=4"
+              alt="Profile of a team member"
+            />
+          </div>
+          <div class="card-text">
+            <h1 style="font-size: 2vw; color: rgb(49, 49, 49)">WindowZ414</h1>
+            <h3 style="font-size: 1.5vw; color: rgb(49, 49, 49)">Support</h3>
+            <div class="buttons">
+              <button class="btn">
+                <a target="blank" href="https://github.com/nift4"
+                  ><i
+                    class="fab fa-github"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://t.me/nift4"
+                  ><i
+                    class="fab fa-telegram-plane"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn">
+                <a target="blank" href="https://twitter.com/_nift4"
+                  ><i
+                    class="fab fa-twitter"
+                    style="font-size: 1.5vw; color: rgb(49, 49, 49)"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h1 class="footer-text" style="color: gray; font-size: 4vw">
+        (c) Project Materium 2021
+      </h1>
+      <div class="footer-container">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
+        <div class="reach-us">
+          <ul>
+            <li>
+              <a target="blank" href="https://t.me/ProjectMateriumChat"
+                >Telegram <i class="fab fa-telegram-plane"></i
+              ></a>
+            </li>
+            <li>
+              <a target="blank" href="https://github.com/ProjectMaterium"
+                >Github <i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a target="blank" href="https://twitter.com/ProjectMaterium"
+                >Twitter <i class="fab fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

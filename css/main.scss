@@ -31,17 +31,19 @@ h1 {
 }
 
 .hamburger {
-  width: 5vh;
-  height: 5vh;
-  background: rgb(114, 0, 114);
+  width: 3vw;
+  height: 3vw;
+  background: #5c00d1;
   position: fixed;
-  top: 5vh;
+  top: 3vw;
   right: 5vw;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 4;
+  cursor: pointer;
   .line1,
   .line2,
   .line3 {
@@ -52,7 +54,6 @@ h1 {
   .line2 {
     margin: 0.4vw 0px;
   }
-  display: none;
 }
 
 nav {
@@ -77,11 +78,116 @@ nav {
   }
 }
 
+.nav-overlay {
+  position: fixed;
+  top: 0vh;
+  left: 0vh;
+  clip-path: circle(0px at 100% 0%);
+  padding: 5vw 0vw;
+  background: rgb(20, 20, 20);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 500ms ease-in-out;
+  .overlay-badge {
+    position: absolute;
+    top: 0vh;
+    right: 0vh;
+    width: 10vw;
+    height: 100%;
+    background: #5c00d1;
+  }
+  .overlay-left {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .overlay-about {
+      width: 100%;
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4vw 0vw;
+      h1 {
+        font-size: 5vw;
+        color: white;
+      }
+      .overlay-buttons {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        button {
+          padding: 0.6rem 2rem;
+          background: #5c00d1;
+          border-radius: 8px;
+          border: none;
+          font-size: 18px;
+          color: white;
+        }
+      }
+    }
+    .overlay-maintainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 30%;
+      width: 100%;
+      h1 {
+        font-size: 3vw;
+        color: white;
+      }
+      button {
+        padding: 0.6rem 2vw;
+        background: #5c00d1;
+        border-radius: 8px;
+        border: none;
+        font-size: 18px;
+        color: white;
+      }
+    }
+    .overlay-logo {
+      width: 40%;
+      color: white;
+    }
+  }
+  .overlay-right {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .overlay-nav {
+      min-height: 25vw;
+      font-size: 1.5rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      li a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.nav-active {
+  clip-path: circle(1200px);
+}
+
 .home {
   .home-badge {
     width: 40vw;
     height: 28vw;
-    background: rgb(77, 0, 77);
+    background: #5c00d1;
     position: absolute;
     right: 0vh;
     z-index: -1;
@@ -157,7 +263,11 @@ nav {
         rgba(255, 255, 255, 0.103)
       );
       backdrop-filter: blur(2px);
-      border-radius: 1vw;
+      border-radius: 0.4vw;
+      transition: transform 600ms ease;
+      &:hover {
+        transform: translateY(-10px);
+      }
       h1,
       h3 {
         color: #ffffff !important;
@@ -174,6 +284,168 @@ nav {
     width: 25vw;
     .swiper_slide {
       width: 50%;
+    }
+  }
+}
+
+.team {
+  padding: 3vw 0vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .wrapper {
+    width: 25vw;
+    overflow: hidden;
+    margin: 0vh 3vh;
+    img {
+      width: 20%;
+    }
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    .card {
+      width: 30vw;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1vw 2vw;
+      border-radius: 0.5vw;
+      margin: 3vw 2vw;
+      .card-img {
+        width: 30%;
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+        margin-right: 1.5vw;
+      }
+      .card-text {
+        width: 70%;
+        color: black !important;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100vw;
+  height: auto;
+  background: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: gray;
+  font-size: 2rem;
+  flex-direction: column;
+  h1 {
+    font-weight: 200;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+    padding: 0rem 3rem;
+    ul {
+      list-style: none;
+      li a {
+        text-decoration: none;
+        color: gray;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 700px) {
+  .hamburger {
+    width: 7vw;
+    height: 7vw;
+    .line1,
+    .line2,
+    .line3 {
+      height: 0.5vw;
+    }
+    .line2 {
+      margin: 0.8vw 0vw;
+    }
+  }
+  .nav-overlay {
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    .overlay-left {
+      padding: 1rem 0rem;
+      height: 40%;
+      img {
+        width: 60% !important;
+      }
+      .overlay-about {
+        h1 {
+          font-size: 2rem;
+        }
+        .overlay-buttons {
+          width: 50vw;
+        }
+        button {
+          display: grid;
+          place-items: center;
+          place-content: center;
+          #btn-text {
+            display: none;
+          }
+          padding: 0rem 0rem !important;
+          width: 35px;
+          height: 35px;
+          border-radius: 50% !important;
+        }
+      }
+      .overlay-maintainer {
+        width: 100%;
+        h1 {
+          line-height: 2rem;
+          font-size: 1.1rem;
+        }
+        button {
+          padding: 0.5rem 1.5rem;
+        }
+      }
+    }
+    .overlay-badge {
+      width: 11vw;
+    }
+    .overlay-right {
+      height: 60%;
+    }
+  }
+  .home {
+    flex-direction: column;
+    .home-badge {
+      display: none;
+    }
+    .home-text {
+      width: 100%;
+      h1 {
+        font-size: 7vw;
+      }
+      p {
+        font-size: 3vw;
+        line-height: 4vw;
+      }
+    }
+    .home-img {
+      align-items: flex-start;
+      width: 100%;
+      img {
+        width: 50%;
+      }
     }
   }
 }

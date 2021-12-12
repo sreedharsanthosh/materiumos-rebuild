@@ -30,6 +30,31 @@ h1 {
   font-weight: 700 !important;
 }
 
+.slider {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0vh;
+  padding: 0vh 2vh;
+  background: black;
+  z-index: 5;
+  svg {
+    animation: stroke 4s ease;
+  }
+}
+
+@keyframes stroke {
+  from {
+    stroke-dasharray: 200;
+  }
+  to {
+    stroke-dasharray: 900;
+  }
+}
+
 .hamburger {
   width: 3vw;
   height: 3vw;

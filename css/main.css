@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: gilroy;
+  font-family: gilroy !important;
   background: black !important;
   overflow-x: hidden;
 }

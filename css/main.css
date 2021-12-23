@@ -500,8 +500,7 @@ h1 {
 }
 
 .team .container .card .card-img img {
-  width: 80px;
-  height: 80px;
+  width: 80%;
   border-radius: 50%;
 }
 

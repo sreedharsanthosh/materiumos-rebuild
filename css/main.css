@@ -220,6 +220,10 @@ h1 {
   margin: 0vh 0.3vw;
 }
 
+.nav-overlay .overlay-left .overlay-buttons button:nth-child(2) {
+  margin: 0vw 2vw;
+}
+
 .nav-overlay .overlay-left .overlay-maintainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,6 +615,7 @@ footer .footer-container ul li a {
     height: 60%;
   }
   .nav-overlay .overlay-right .overlay-nav {
+    padding-left: 0px;
     min-height: 35vh;
   }
   .home {

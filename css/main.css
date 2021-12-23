@@ -75,6 +75,13 @@ h1 {
   }
 }
 
+.logo {
+  position: absolute;
+  top: 3vw;
+  left: 3vw;
+  width: 200px;
+}
+
 .hamburger {
   width: 3vw;
   height: 3vw;
@@ -127,8 +134,9 @@ h1 {
   position: fixed;
   top: 0vh;
   z-index: 3;
-  -webkit-clip-path: circle(0px at 100% 0%);
-          clip-path: circle(0px at 100% 0%);
+  -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+          clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+  opacity: 0;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
@@ -262,7 +270,6 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   list-style: none;
-  min-height: 40vh;
 }
 
 .nav-overlay .overlay-nav li a {
@@ -271,9 +278,14 @@ h1 {
   font-size: 1.3rem;
 }
 
+.nav-overlay .overlay-nav li {
+  margin: 2vw 0vh !important;
+}
+
 .nav-active {
-  -webkit-clip-path: circle(1200px);
-          clip-path: circle(1200px);
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 100%, 100% 0, 0 0, 0 100%);
+  opacity: 1;
 }
 
 .home {
@@ -548,8 +560,8 @@ footer .footer-container ul li a {
 
 @media only screen and (max-width: 700px) {
   .hamburger {
-    width: 7vw;
-    height: 7vw;
+    width: 2rem;
+    height: 2rem;
   }
   .hamburger .line1,
   .hamburger .line2,
@@ -629,6 +641,7 @@ footer .footer-container ul li a {
   }
   .home .home-text {
     width: 100%;
+    padding: 13vh 3vh;
   }
   .home .home-text h1 {
     font-size: 2.7rem;
@@ -696,6 +709,9 @@ footer .footer-container ul li a {
   }
   footer h1 {
     font-size: 1.8rem !important;
+  }
+  footer .footer-container ul {
+    padding: 0px 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */

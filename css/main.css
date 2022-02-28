@@ -206,6 +206,10 @@ h1 {
           justify-content: space-evenly;
 }
 
+.overlay-buttons a {
+  text-decoration: none;
+}
+
 .nav-overlay .overlay-left .overlay-buttons button {
   padding: 0.7vw 3vw;
   display: -webkit-box;
